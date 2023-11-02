@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.chatbox {
+    border: 1px solid #ccc;
+    height: 250px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.user {
+    background-color: #e8f5e9;
+}
+
+.bot {
+    background-color: #f0f0f0;
+}
+
+.input-container {
+    display: flex;
+    margin: 0 10px;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+#typing-animation {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: typing 0.7s infinite alternate;
+    display: none; /* Initially hide the typing animation */
+}
+
+@keyframes typing {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+}
